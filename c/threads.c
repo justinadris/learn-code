@@ -7,9 +7,7 @@ void SetCurrentThreadName(const wchar_t* name) {
 void Worker() {
     SetCurrentThreadName(L"Custom worker thread");
 
-    printf("worker thread: %d\n", GetCurrentThreadId());
-    
-    return 0;
+    printf("worker thread: %d\n", GetCurrentThreadId());   
 }
 
 int main() {
